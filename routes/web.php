@@ -14,5 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('content.menu');
+})->name('mainw');
+
+Route::get('/LogIn', function() {
+    return view('content.LogIn');
+})->name('log');
+
+Route::get('/SigIn', function() {
+    return view('content.SigIn');
+})->name('sig');
+
+Route::get('/NewArtist', function() {
+    return view('content.AddArtist');
+})->name('newa');
+
+Route::get('/NewPiece', function() {
     return view('content.AddPiece');
-});
+})->name('newp');
+
